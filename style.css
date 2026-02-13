@@ -1,0 +1,42 @@
+body { background: #1a1a2e; color: white; font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; padding: 20px; }
+#game-container { width: 400px; background: #16213e; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+header { border-bottom: 2px solid #0f3460; margin-bottom: 20px; padding-bottom: 10px; }
+#stats { display: flex; justify-content: space-around; font-size: 0.9em; color: #e94560; }
+.hidden { display: none; }
+button { width: 100%; padding: 12px; margin: 8px 0; border: none; border-radius: 8px; cursor: pointer; background: #0f3460; color: white; font-weight: bold; transition: 0.3s; }
+button:hover { background: #e94560; transform: scale(1.02); }
+#question-text { font-size: 1.2em; margin: 20px 0; color: #4ecca3; }
+.triangle-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+}
+
+/* El triángulo verde */
+.triangle-svg {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+
+/* Los cuadrados de los lados */
+.square {
+    position: absolute;
+    border: 2px solid #e94560;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(233, 69, 96, 0.2);
+    font-size: 10px;
+}
+
+.side-a { width: 60px; height: 60px; left: -20px; bottom: 0; } /* Cateto vertical */
+.side-b { width: 100px; height: 100px; left: 40px; bottom: -100px; } /* Cateto horizontal */
+.side-c { 
+    width: 116px; height: 116px; 
+    left: 85px; top: -20px; 
+    transform: rotate(-31deg); /* Alineado a la hipotenusa */
+    border-color: #f1c40f;
+    background: rgba(241, 196, 15, 0.2);
+}

@@ -1,0 +1,43 @@
+<div id="game-container">
+  <header>
+    <h1>Susanu</h1>
+    <div id="stats">
+      <span>🔥 Racha: <b id="streak">0</b></span>
+      <span>🏆 Puntos: <b id="points">0</b></span>
+      <span>📊 Promedio: <b id="average">0%</b></span>
+    </div>
+  </header>
+
+  <div id="menu">
+    <button onclick="startLevel('math')">📐 Matemáticas</button>
+    <button onclick="startLevel('history')">🇪🇨 Historia</button>
+    <button onclick="startLevel('philosophy')">🏛️ Filosofía</button>
+  </div>
+
+  <div id="game-board" class="hidden">
+    <h2 id="subject-title"></h2>
+    <p id="question-text"></p>
+    <div id="options-container"></div>
+    <button id="back-btn" onclick="showMenu()">Volver al menú</button>
+  </div>
+</div>
+<div id="game-board" class="hidden">
+    <h2 id="subject-title"></h2>
+    
+    <div id="visual-container" class="hidden">
+        <div class="triangle-wrapper">
+            <div class="square side-a"><span>a²</span></div>
+            <div class="square side-b"><span>b²</span></div>
+            <div class="triangle-svg">
+                <svg width="100" height="100">
+                    <polygon points="0,100 100,100 0,0" fill="#4ecca3" />
+                </svg>
+            </div>
+            <div class="square side-c"><span>c²</span></div>
+        </div>
+    </div>
+
+    <p id="question-text"></p>
+    <div id="options-container"></div>
+    <button id="back-btn" onclick="showMenu()">Volver al menú</button>
+</div>
